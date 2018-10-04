@@ -5,12 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import ProductView from '../pages/product/view/product-view';
+import { ProductList } from '../pages/product/list/product-list';
+import { ProductEdit } from '../pages/product/edit/product-edit';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    ProductView,
+    ProductList,
+    ProductEdit
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    ProductView,
+    ProductList,
+    ProductEdit
   ],
   providers: [
     StatusBar,
